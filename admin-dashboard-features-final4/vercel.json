@@ -32,7 +32,6 @@
       "dest": "/"
     }
   ],
-  "output": "standalone",
   "cleanUrls": true,
   "trailingSlash": false,
   "regions": ["iad1"],
