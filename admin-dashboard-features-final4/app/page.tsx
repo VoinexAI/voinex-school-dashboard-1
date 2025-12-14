@@ -13,7 +13,7 @@ export default function Home() {
     const redirect = async () => {
       try {
         const token = localStorage.getItem("authToken")
-        const targetRoute = token ? "/dashboard" : "/auth/login"
+        const targetRoute = token ? "/dashboard" : "/login"
         
         console.log("[Home] Token exists:", !!token)
         console.log("[Home] Redirecting to:", targetRoute)
@@ -21,7 +21,7 @@ export default function Home() {
         await router.push(targetRoute)
       } catch (error) {
         console.error("[Home] Navigation error:", error)
-        window.location.href = "/auth/login"
+        window.location.href = "/login"
       }
     }
 
