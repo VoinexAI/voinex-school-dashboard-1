@@ -42,7 +42,7 @@ export default function DashboardPage() {
 
         if (!token) {
           console.error("[Dashboard] No auth token")
-          router.push("/auth/login")
+          router.push("/login")
           return
         }
 
