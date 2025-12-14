@@ -8,7 +8,6 @@ export default function Home() {
   const pathname = usePathname()
 
   useEffect(() => {
-    // Prevent redirect loop
     if (pathname !== "/") return
 
     const redirect = async () => {
